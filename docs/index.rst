@@ -1,4 +1,4 @@
-F5 SP AVR + Big Data Training - Index
+F5 SP IoT Training - Index
 =====================================
 
 .. toctree::
