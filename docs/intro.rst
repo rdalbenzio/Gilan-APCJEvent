@@ -1,18 +1,14 @@
 Welcome
 -------
 
-Welcome to F5's Service Provider AVR and Big Data hands on training series.
-The intended audience for these labs are Service Provider engineers that
-would like to leverage the power of F5 data visibility and integrate this
-immense data capability into open source tools such as Elasticsearch, Hadoop
-and others.
+Welcome to F5's Service Provider SP Event IoT hands on training series.
+The goal of this lab is to show you how F5 BIG-IP native functionalities of AFM, PEM and DNS together can be used to build a solution which can provide network-based security for Internet of Things (IoT) services. This lab will combine together functionalities from AFM (Firewalling Policies) PEM (Session DB, as well as reporting), and DNS queries processing (coming from DNS module) to show how we can exploit the interaction between modules within our consolidated BIG-IP solution.
 
 
 Getting Started
 ---------------
 
-Please follow the instructions provided by this documentation to start your
-lab and access your lab.
+Connect F5 UDF Web Portal at udf.f5.com, login using your usual F5 credentials and go to Courses. Search for IoT, you will find the Course: IoT Training: SP Specialization Event
 
 .. NOTE::
 	All work for this lab will be performed exclusively from the Linux Jumphost and Linux Client Machines. All required access and servies needed to perform classes and labs are provided by the UDF. No installation or interaction with your local system is required.
