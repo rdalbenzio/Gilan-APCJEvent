@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome &#8212; F5 CSP Big Data Training 2.0 documentation</title>
+    <link rel="stylesheet" href="_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/f5.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Class 1: BIG-IP AVR (BIG-IP Goodness)" href="class1/class1.html" />
+    <link rel="prev" title="F5 SP IoT Training - Index" href="index.html" />
+<!--
+# Copyright 2017 F5 Networks
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+-->
+<link href="https://cdn.f5.com/favicon.ico" rel="icon">
+<script src="https://use.fontawesome.com/21fb8a09c3.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="row corp-header">
+      <div class="container corp-header">
+        <div class="container corp-menu">
+          <ul>
+            <li><a href="https://f5.com" class="internalLink">F5.com</a></li>
+            <li><a href="https://support.f5.com">Support</a></li>
+            <li><a href="https://devcentral.f5.com">Community</a></li>
+            <li><a href="https://github.com/F5Networks">GitHub</a></li>
+            <li><a href="https://f5.com/about-us/careers">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pageHeader">
+      <div class="container stat">
+        <div class="col-xs-12 stat">
+          <a class="internalLink" href="https://f5.com">
+            <img class="logo" src="https://cdn.f5.com/websites/support/assets/images/logo.svg" width="50" height="44" alt="F5 Networks" title="F5 Networks" border="0">
+          </a>
+            <ul id="MainMenu" class="main-menu">
+              <li>
+                <a href="#">Products
+                  <span class="indicator"><span class="arrow-up"></span></span>
+                </a>
+                <div class="menu-panel soft-hide" id="ProductsSubmenu">
+                  <div class="container">
+                    <ul class="submenu col-sm-11">
+                      <li class="third"><span class="a-mm-h">Network Functions Virtualization</span>
+                        <ul>
+                          <li><a href="https://f5.com/solutions/service-provider/reference-architectures/network-functions-virtualization" data-link-type="Nav: Mega">F5 NFV</a></li>
+                        </ul>
+                        <!--span class="seemore"><a data-link-type="Nav: Mega" href="/products/connectors">See all </a></--span-->
+                      </li>
+                      <li class="divider"></li>
+                      <li class="third"><span class="a-mm-h">Context Aware Traffic Management</span>
+                        <ul>
+                          <li><a href="https://f5.com/solutions/service-provider/reference-architectures/context-aware-policy-enforcement" data-link-type="Nav: Mega">F5 Policy Enforcement</a></li>
+                          <li><a href="https://f5.com/solutions/service-provider/reference-architectures/tcp-optimization" data-link-type="Nav: Mega">F5 TCP Optimisation</a></li>
+                        </ul>
+                        <!--span class="seemore"><a data-link-type="Nav: Mega" href="/products/connectors">See all </a></--span-->
+                      </li>
+                      <li class="divider"></li>
+                      <li class="third"><span class="a-mm-h">Security</span>
+                        <ul>
+                          <li><a href="hhttps://f5.com/solutions/service-provider/reference-architectures/carrier-class-network-firewall" data-link-type="Nav: Mega">F5 Carrier Class Firewall</a></li>
+                          <li><a href="https://f5.com/solutions/service-provider/reference-architectures/carrier-grade-nat" data-link-type="Nav: Mega">F5 Carrier Grade NAT</a></li>
+                          <li><a href="https://f5.com/solutions/service-provider/reference-architectures/intelligent-dns-for-service-providers" data-link-type="Nav: Mega">F5 Intelligent DNS</a></li>
+                        </ul>
+                        <!--span class="seemore"><a href="/products/">See all </a></span-->
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">Resources
+                  <span class="indicator"><span class="arrow-up"></span></span>
+                </a>
+                <div class="menu-panel soft-hide" id="UPCProgramSubmenu">
+                  <div class="container">
+                    <ul class="submenu col-sm-11">
+                      <li class="third">
+                        <span class="a-mm-h">Downloads</span>
+                        <ul>
+                          <li><a target="_blank" data-link-type="Nav: Mega" href="https://www.elastic.co/products/elasticsearch" class="internalLink">ElasticSearch</a></li>
+                          <li><a target="_blank" data-link-type="Nav: Mega" href="https://www.elastic.co/products/logstash" class="internalLink">Logstash</a></li>
+                          <li><a target="_blank" data-link-type="Nav: Mega" href="https://www.elastic.co/products/kibana" class="internalLink">Kibana</a></li>
+                        </ul>
+                      </li>
+                      <li class="divider"></li>
+
+                      <li class="third">
+                        <span class="a-mm-h">OpenSource</span>
+                        <ul>
+                          <li><a target="_blank" data-link-type="Nav: Mega" href="https://github.com/F5Networks" class="internalLink">GitHub</a></li>
+                          <li><a target="_blank" data-link-type="Nav: Mega" href="http://docs.ansible.com/ansible/latest/list_of_network_modules.html" class="internalLink">Ansible</a></li>
+                        </ul>
+                      </li>
+                      <li class="divider"></li>
+
+                      <li class="third">
+                        <a href="//university.f5.com" class="a-mm-h internalLink" target="_blank" data-link-type="Nav: Mega">F5 University</a>
+                        <ul>
+                          <li>
+                            <p>Get up to speed with free self-paced courses</p>
+                          </li>
+                        </ul>
+                        <a data-ng-href="https://devcentral.f5.com" class="a-mm-h internalLink" target="_blank" data-link-type="Nav: Mega" href="https://devcentral.f5.com">DevCentral</a>
+                        <ul>
+                          <li>
+                            <p>Join the community of 250,000+ technical peers</p>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /container-fluid -->
+</nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-3 sidebartoc">
+         <h4><a href="./">F5 CSP Big Data Training 2.0</a></h4>
+<div id="searchbox" style="display: none" role="search">
+  <form class="search" action="search.html" method="get">
+    <div>
+      <input type="text" name="q" placeholder="Search" style="padding-left: 6px;"/>
+      <!-- <input type="submit" value="Go" style="margin-top: 4px;"/> -->
+      <button type="submit" class="btn btn-primary btn-xs">Go</button>
+    </div>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  <p class="caption">
+   <span class="caption-text">Current Page</span>
+  </p>
+  <ul>
+<li><a class="reference internal" href="#">Welcome</a></li>
+<li><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
+<li><a class="reference internal" href="#udf-blueprint">UDF Blueprint</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lab-topology">Lab Topology</a></li>
+</ul>
+
+
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Welcome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#udf-blueprint">UDF Blueprint</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#lab-topology">Lab Topology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class1/class1.html">Class 1: BIG-IP AVR (BIG-IP Goodness)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class2/class2.html">Class 2: Introduction to ELK Stack (ELK Coolness)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howtos/howtos.html">HOWTOs: Index</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">F5 SP IoT Training - Index</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="class1/class1.html"
+                        title="next chapter">Class 1: BIG-IP AVR (BIG-IP Goodness)</a></p>
+        
+      </div>
+      <div class="col-md-offset-3 col-sm-offset-3 main">
+                  <!-- default breadcrumb -->
+        <h4>
+          <a href="/">Community Training Classes &amp; Labs</a> &gt; <a href="index.html">F5 CSP Big Data Training</a>
+          <span class="right"><a href="genindex.html">Index</a></span>
+        </h4>
+        <!-- end default breadcrumb -->
+        
+        
+  <div class="section" id="welcome">
+<h1>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to F5’s Service Provider SP Event IoT hands on training series.
+The goal of this lab is to show you how F5 BIG-IP native functionalities of AFM, PEM and DNS together can be used to build a solution which can provide network-based security for Internet of Things (IoT) services. This lab will combine together functionalities from AFM (Firewalling Policies) PEM (Session DB, as well as reporting), and DNS queries processing (coming from DNS module) to show how we can exploit the interaction between modules within our consolidated BIG-IP solution.</p>
+</div>
+<div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>Connect F5 UDF Web Portal at udf.f5.com, login using your usual F5 credentials and go to Courses. Search for IoT, you will find the Course: IoT Training: SP Specialization Event</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">All work for this lab will be performed exclusively from the Linux Jumphost and Linux Client Machines. All required access and servies needed to perform classes and labs are provided by the UDF. No installation or interaction with your local system is required.</p>
+</div>
+</div>
+<div class="section" id="prerequisites">
+<h1>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h1>
+<p>In order to complete this series of training classes you will need to utilize
+the provided blueprint for the course session. To access the UDF sessions you will
+need to have the following prerequists met.</p>
+<ul class="simple">
+<li>Current Access to UDF</li>
+<li>SSH key of your access machine in UDF</li>
+<li>Windows or MAC ssh client working with UDF</li>
+</ul>
+<p>All pre-built environments implement the <span class="xref std std-ref">lab-topology</span> shown below.</p>
+<div class="section" id="udf-blueprint">
+<h2>UDF Blueprint<a class="headerlink" href="#udf-blueprint" title="Permalink to this headline">¶</a></h2>
+<p>Please follow the instructions provided by your lab instructor to access your
+lab environment. The lab environment will be delivered  via UDF blueprints to
+each student.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please deploy and start your lab as soon as you have access to the class as the lab takes some time to boot all the components.</p>
+</div>
+</div>
+</div>
+<div class="section" id="lab-topology">
+<h1>Lab Topology<a class="headerlink" href="#lab-topology" title="Permalink to this headline">¶</a></h1>
+<p>The network topology implemented for this lab based on the Service Provider Gi lan
+path. The focus of the lab is Control Plane programmability and Data Plane elements,
+so this lab will focus at both parts at different time.
+The following components have been included in your lab environment:</p>
+<ul class="simple">
+<li>1 x <code class="docutils literal"><span class="pre">F5</span> <span class="pre">BIG-IP</span> <span class="pre">VE</span></code> (v13.0 HF2)</li>
+<li>1 x Linux Jumphost (ubuntu 16.04 - mate)</li>
+<li>2 x Linux Clients (ubuntu 16.04 - mate)</li>
+<li>1 x Linux Server (ubuntu 16.04)</li>
+</ul>
+<p id="id1"><a class="reference internal" href="_images/lab_topology.png"><img alt="lab_topo1" src="_images/lab_topology.png" style="width: 8in; height: 4in;" /></a></p>
+<p>The following table lists VLANS, IP Addresses and Credentials for all
+components:</p>
+<table border="1" class="colwidths-given docutils" id="id2">
+<caption><span class="caption-text">Lab Network Information</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="22%" />
+<col width="22%" />
+<col width="22%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Component</th>
+<th class="head">VLAN</th>
+<th class="head">IP Address</th>
+<th class="head">Credentials</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Linux Jumphost</td>
+<td>Mgmt</td>
+<td>10.1.1.20</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>BIG-IP</td>
+<td>Mgmt</td>
+<td>10.1.1.4</td>
+<td>admin/admin</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>Internal</td>
+<td>10.1.10.5</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>External</td>
+<td>10.1.20.5</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>Control</td>
+<td>10.1.30.5</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Client 00</td>
+<td>Mgmt</td>
+<td>10.1.1.9</td>
+<td>udfclient/S3rv1ceP0weR</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>Internal</td>
+<td>10.1.10.25</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Client 01</td>
+<td>Mgmt</td>
+<td>10.1.1.7</td>
+<td>udfclient/S3rv1ceP0weR</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>Internal</td>
+<td>10.1.10.30</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>ELK Stack</td>
+<td>Mgmt</td>
+<td>10.1.1.5</td>
+<td>ubuntu/default</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>Control</td>
+<td>10.1.30.15</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+        
+		     <div class="row next-prev-btn-row">
+           <div class="col-lg-12">
+           
+		        <a href="index.html" title="F5 SP IoT Training - Index" accesskey="p" class="btn btn-primary pull-left"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous</a>
+           
+           
+              <a href="class1/class1.html" title="Class 1: BIG-IP AVR (BIG-IP Goodness)" accesskey="n" class="btn btn-primary pull-right">Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+           
+		     </div>
+         </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+      <div class="container-fluid">
+      <div class="row">
+        <div class="content-fluid pre-footer">
+          <div class="blocks-container">
+            <div class="block">
+              <h3>Support Programs</h3>
+              <p>Regionally located support centers enable F5 to provide support in a number of languages through native-speaking support engineers.</p>
+              <a class="btn internalLink" data-ng-href="https://f5.com/support/support-offerings" target="_blank" href="https://f5.com/support/support-offerings">See more
+                <span class="icon-1x-right icon-new-window" data-icon="new-window">​</span>
+              </a>
+            </div>
+            <div class="block">
+              <h3>Contact Support</h3>
+              <p>
+                North America: 1-888-882-7535<br>
+                Outside North America: 800-11-275-435
+              </p>
+              <a class="btn internalLink" data-ng-href="https://f5.com/about-us/contact#regional-support" target="_blank" href="https://f5.com/about-us/contact#regional-support">Local Support Numbers
+                <span class="icon-1x-right icon-new-window" data-icon="new-window">​</span>
+              </a>
+            </div>
+            <div class="block">
+              <h3>Feedback and Help</h3>
+              <p>Have questions, suggestions, or just want to get something off your chest? Let us know.</p>
+              <a class="btn" data-ui-sref="siteFeedback" target="_blank" href="https://support.f5.com/csp/siteFeedback">Leave feedback</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer">
+          <div class="container">
+            <div class="col-sm-3 col-md-2">
+              <h4>About F5</h4>
+              <ul>
+                <li><a data-ng-href="https://f5.com/about-us/contact" target="_blank" data-link-type="footer" href="https://f5.com/about-us/contact" class="internalLink">Contact F5</a>
+                </li>
+                <li><a data-ng-href="https://f5.com/about-us/careers" target="_blank" data-link-type="footer" href="https://f5.com/about-us/careers" class="internalLink">Careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-3 col-md-2">
+              <h4>Education</h4>
+              <ul>
+                <li><a data-ng-href="https://f5.com/education/training" target="_blank" data-link-type="footer" href="https://f5.com/education/training" class="internalLink">Training</a>
+                </li>
+                <li><a data-ng-href="https://f5.com/education/certification" target="_blank" data-link-type="footer" href="https://f5.com/education/certification" class="internalLink">Certification</a>
+                </li>
+                <li><a data-ng-href="https://f5.com/education/training/free-courses" target="_blank" data-link-type="footer" href="https://f5.com/education/training/free-courses" class="internalLink">Free Online Training</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-3 col-md-2">
+              <h4>F5 sites</h4>
+              <ul>
+              <li><a data-ng-href="https://f5.com" target="_blank" data-link-type="footer" href="https://f5.com" class="internalLink">F5.com</a>
+              </li>
+              <li><a data-ng-href="https://devcentral.f5.com" target="_blank" data-link-type="footer" href="https://devcentral.f5.com" class="internalLink">Community</a>
+              </li>
+              <li><a data-ng-href="https://partners.f5.com" target="_blank" data-link-type="footer" href="https://partners.f5.com" class="internalLink">Partners</a>
+              </li>
+          </ul>
+      </div>
+
+      <div class="col-sm-3 col-md-2">
+          <h4>Support Tasks</h4>
+          <ul>
+              <li><a data-ui-sref="mySupport.createServiceRequest" data-link-type="footer" href="https://support.f5.com/csp/my-support/service-request">Create Service Request </a>
+              </li>
+              <li><a data-ng-href="https://f5.com/about-us/contact#regional-support" target="_blank" data-link-type="footer" href="https://f5.com/about-us/contact#regional-support" class="internalLink">Contact Support</a>
+              </li>
+              <li><a data-ui-sref="siteFeedback" target="_blank" data-link-type="footer" href="https://support.f5.com/csp/siteFeedback">Leave feedback [+]</a>
+              </li>
+          </ul>
+      </div>
+
+      <div class="col-xs-12 col-md-3 right">
+          <h4>Connect with us</h4>
+          <ul class="social_icons">
+              <li><a href="//twitter.com/f5networks" target="_blank" data-name="twitter" data-type="" data-prefix="social" data-utf="E032" title="Twitter" class="externalLink"><i class="icon-1x icon-twitter icon-inverse-circle" data-link-type="footer"></i></a></li>
+              <li><a href="//www.linkedin.com/companies/f5-networks" target="_blank" class="linkedin externalLink" title="LinkedIn"><i class="icon-1x icon-linkedin icon-inverse-circle" data-link-type="footer"></i></a></li>
+              <li><a href="//www.facebook.com/f5networksinc" target="_blank" class="facebook externalLink" title="Facebook"><i class="icon-1x icon-facebook icon-inverse-circle" data-link-type="footer"></i></a></li>
+              <li><a href="//www.youtube.com/f5networksinc" target="_blank" class="youtube externalLink" title="YouTube"><i class="icon-1x icon-youtube icon-inverse-circle" data-link-type="footer"></i></a></li>
+              <li><a data-ng-href="https://devcentral.f5.com" target="_blank" class="devcentral internalLink" title="DevCentral" href="https://devcentral.f5.com"><i class="icon-1x icon-dc-pos icon-inverse-circle" data-link-type="footer"></i></a></li>
+          </ul>
+      </div>
+
+      <div class="content-fluid left">
+          <div class="col-xs-12">
+              <p>
+                  © Copyright <span class="ng-binding">2017</span> by F5 Networks, Inc. |
+                  <a data-ng-href="https://f5.com/about-us/policies" target="_blank" data-link-type="footer" href="https://f5.com/about-us/policies" class="internalLink">Policies</a> |
+                  <a data-ng-href="https://f5.com/about-us/policies/trademarks" target="_blank" data-link-type="footer" href="https://f5.com/about-us/policies/trademarks" class="internalLink">Trademarks</a>
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+  </div>
+</div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="_static/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    jQuery.noConflict(true)
+  </script>
+  </body>
+</html>
