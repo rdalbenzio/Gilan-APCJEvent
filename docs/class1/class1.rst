@@ -1,21 +1,19 @@
-Class 1: BIG-IP AVR (BIG-IP Goodness)
+Class 1: PEM Policy Configuration and Provisioning
 ======================================
 
 This class covers the following topics:
 
 - Module 1
 
-  - REST API Basics
+  - PEM Policy Configuration and Provisioning
 
 - Module 2
-      
-  - F5 BIG-IP AVR
-        
-  - Configuring AVR
-        
-  - Navigating AVR
-        
-  - Modify AVR Reports
+
+  - Configuring PEM Reporting
+
+  - Using Reporting as Action in PEM Policy
+
+  - Reporting Examples using an external tool (ELK)
 
 Expected time to complete: **30 mins**
 
@@ -24,4 +22,3 @@ Expected time to complete: **30 mins**
    :glob:
 
    module*/module*
-
